@@ -11,16 +11,20 @@ namespace cw{
     namespace ut {
 
         class Size {
-        public:
-            int w, h;
+        private:
+            int w_, h_;
 
-            Size() : w(0), h(0) { }
-            Size(const Size& src) : w(src.w), h(src.h) { }
-            Size(int w_, int h_) : w(w_), h(h_) { }
+        public:
+            Size() : w_(0), h_(0) { }
+            Size(const Size& src) : w_(src.w_), h_(src.h_) { }
+            Size(int w_, int h_) : w_(w_), h_(h_) { }
+
+            int w() const { return w_;}
+            int h() const { return h_;}
         };
 
-        std::ostream& operator <<(std::ostream& stream, const Size& size){
-            stream << '(' << size.w << ',' << size.h << ')';
+        inline std::ostream& operator <<(std::ostream& stream, const Size& size){
+            stream << '(' << size.w() << ',' << size.h() << ')';
         }
 
     }

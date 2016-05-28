@@ -1,3 +1,5 @@
+#if 0
+
 //
 // Created by Dima on 28.05.2016.
 //
@@ -84,3 +86,5 @@ namespace testing {
 }
 
 #endif //CPPWINDOWS_TESTING_H
+
+#endif
