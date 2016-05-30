@@ -1,0 +1,12 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs/CppWindows/v14
+/Debug
+*.sln
+/CppWindows.vcxproj.user
+/CppWindows.vcxproj.filters
+/CppWindows.vcxproj
+/CppWindows.VC.VC.opendb
+/CppWindows.VC.db

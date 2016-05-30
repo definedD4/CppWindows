@@ -25,6 +25,7 @@ namespace cw{
 
         inline std::ostream& operator <<(std::ostream& stream, const Size& size){
             stream << '(' << size.w() << ',' << size.h() << ')';
+			return stream;
         }
 
     }

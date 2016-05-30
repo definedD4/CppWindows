@@ -25,6 +25,7 @@ namespace cw{
 
         inline std::ostream& operator <<(std::ostream& stream, const Point& point){
             stream << '(' << point.x() << ',' << point.y() << ')';
+			return stream;
         }
 
         inline Point operator +(const Point& left, int right){

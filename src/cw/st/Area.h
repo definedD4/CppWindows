@@ -34,7 +34,7 @@ namespace cw {
             bool isNode() const { return !(isRoot() || isLeaf()); }
 
             Area* getParrent() const { return m_Parrent; }
-            const std::vector<Area*> getChildren() const { return m_Children; }
+            const std::vector<Area*>& getChildren() const { return m_Children; }
 
             ut::Point getPos() const { return m_Pos; }
             void setPos(const ut::Point &Pos) { m_Pos = Pos; }

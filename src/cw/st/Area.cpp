@@ -16,14 +16,13 @@ namespace cw {
         }
 
         Area::~Area() {
-            for(Area* child : m_Children){
-                delete child;
-            }
+			if(m_Children.size() > 0)
+				delete *(m_Children.end() - 1);
 
             if(!isRoot()){ // element is not root
-                m_Parrent->m_Children.erase(std::find(m_Parrent->m_Children.begin(),
-                                                      m_Parrent->m_Children.end(),
-                this));
+                m_Parrent->m_Children.erase(std::find(
+					m_Parrent->m_Children.begin(),
+					m_Parrent->m_Children.end(), this));
             }
         }
 
